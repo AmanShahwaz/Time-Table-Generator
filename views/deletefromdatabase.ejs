@@ -1,0 +1,40 @@
+<%- include('header') %>
+<div class="view">
+
+    <h1 class="heading"> Database has the following data </h1>
+    <div class="course">
+        <h2>Course Name</h2>
+        <h2>Course Faculty</h2>
+        <h2>Course Code</h2>
+        <h2>Course Department</h2>
+    </div>
+    <% courses.forEach(function(course){ %>
+
+        <div class="course">
+
+        <p>
+            <%= course.name %>
+        </p>
+        <p>
+            <%= course.faculty %>
+        </p>
+        <p>
+            <%= course.code %>
+        </p>
+        <p>
+            <%= course.dept %>
+        </p>
+    </div>
+    
+    <% }) %>
+
+
+    <h1 class="heading">Enter Subject Code Which you want to remove</h1>
+
+    <form action="/deletefromdatabase" method="post">
+        <label class="formlabel" for="code">Course Code</label>
+        <input type="text" class="forminput" name="code">
+        <button type="submit" class="subbtn">Delete</button>
+    </form>
+</div>
+<%- include('footer') %>

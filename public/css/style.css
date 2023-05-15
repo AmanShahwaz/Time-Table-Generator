@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100vw;
+    background-color:rgb(217, 217, 217);
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.brand{
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* main page container */
+
+.box{
+
+    margin: 50px 5%;
+    background-color:rgba(0, 145, 255, 0.39);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.item{
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    /* color: rgb(0, 102, 255); */
+    color: black;
+    text-transform: capitalize;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: all 0.1s ease-in;
+    border: 1px solid white;
+}
+.item:hover{
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.492);
+    font-weight:600;
+    letter-spacing: 3px;
+}
+.item:nth-child(8):hover{
+    box-shadow: 1px 1px 4px honeydew;
+    font-weight:600;
+    color: red;
+}
+
+.logBox{
+    margin:auto 5%;
+}
+.heading{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 5vh;
+    margin:8px 0;
+    padding-left:15px;
+}
+.logs{
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 2%;
+}
+.logs p{
+    margin:5px auto;
+    letter-spacing: 1px;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.logBox button{
+    width: 100%;
+    height: 5vh;
+    transition: all 0.2s ease-in-out;
+    border: none;
+}
+.logBox button:hover,.logBox button a:hover{
+    background-color: mediumspringgreen;
+    color: black;
+    letter-spacing: 4px;
+
+}
+.logBox button a{
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: green;
+    width: 100%;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+button{
+    margin:15px 0;
+    background-color:rgba(0, 145, 255, 0.39);
+    color: white;
+    letter-spacing: 3px;
+    transition: all 0.2s ease-in;
+    border: none;
+    height: 4vh;
+}
+button:hover{
+    background-color: mediumspringgreen;
+    color: black;
+    letter-spacing: 4px;  
+
+}
+
+.view{
+    margin:50px 5%;
+}
+
+
+
+.course{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    justify-content: center;
+    border: 1px solid silver;
+    text-align: center;
+    align-items: center;
+    height: 6vh;
+
+}
+.course h2, p{
+    border-right: 1px solid silver;
+    text-transform: capitalize;
+}
+
+.tcourse{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 80%;
+    justify-content: center;
+    border: 1px solid silver;
+    text-align: center;
+    align-items: center;
+    height: 6vh;
+
+}
+
+.finaltable{
+    border: 2px solid crimson;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.printBtn {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #008CBA;
+    color: #FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .printBtn:hover {
+    background-color: #006F8E;
+  }
+  
+  @media print {
+    .printBtn {
+      display: none;
+    }
+  }
+  
+
+.ttable p{
+    margin:20px 20px;
+}
+
+thead{
+    border: 2px solid crimson;
+}   
+
+tr{
+    height: 10vh;
+    margin: 15px 10px;
+    border: 2px solid cadetblue;
+}
+
+
+.tcourse h2, p{
+    border-right: 1px solid silver;
+    text-transform: capitalize;
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: gray;
+}
+
+#message{
+
+    text-align: center;
+
+}
+
+

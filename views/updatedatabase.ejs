@@ -1,0 +1,39 @@
+<%- include('header') %>
+    <div class="view">
+        <h1 class="heading"> Courses </h1>
+        <div class="course">
+            <h2>Course Name</h2>
+            <h2>Course Faculty</h2>
+            <h2>Course Code</h2>
+            <h2>Course Department</h2>
+        </div>
+        <% courses.forEach(function(course){ %>
+
+            <div class="course">
+
+                <p>
+                    <%= course.name %>
+                </p>
+                <p>
+                    <%= course.faculty %>
+                </p>
+                <p>
+                    <%= course.code %>
+                </p>
+                <p>
+                    <%= course.dept %>
+                </p>
+            </div>
+
+            <% }) %>
+
+            <p class="heading" color="crimson" id="message"> Log : <%= message %> </p>
+            <h1 class="heading">Enter Subject Code</h1>
+
+            <form action="/updatedatabase" method="post">
+                <label class="formlabel" for="code">Course Code</label>
+                <input type="text" class="forminput" name="code">
+                <button type="submit" class="subbtn">Find Details</button>
+            </form>
+    </div>
+    <%- include('footer') %>

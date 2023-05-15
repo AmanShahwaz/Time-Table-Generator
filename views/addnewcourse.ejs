@@ -1,0 +1,46 @@
+<%- include('header') %>
+    <div class="view">
+        <h1 class="heading"> Add Courses </h1>
+        <form action="/addnewcourse" method="post">
+            <label class="formlabel" for="name">Course Name</label>
+            <input type="text" class="forminput" name="name">
+            <label class="formlabel" for="code">Course code</label>
+            <input type="text" class="forminput" name="code">
+            <label class="formlabel" for="faculty">Assigned faculty</label>
+            <input type="text" class="forminput" name="faculty">
+            <label class="formlabel" for="department">Course Department</label>
+            <input type="text" class="forminput" name="department">
+            <button type="submit" class="subbtn">Add Course</button>
+        </form>
+
+
+        <h2 class="heading">Existing Courses </h2>
+        <div class="course">
+            <h2>Course Name</h2>
+            <h2>Course Faculty</h2>
+            <h2>Course Code</h2>
+            <h2>Course Department</h2>
+        </div>
+        <% courses.forEach(function(course){ %>
+
+            <div class="course">
+
+                <p>
+                    <%= course.name %>
+                </p>
+                <p>
+                    <%= course.faculty %>
+                </p>
+                <p>
+                    <%= course.code %>
+                </p>
+                <p>
+                    <%= course.dept %>
+                </p>
+            </div>
+
+            <% }) %>
+    </div>
+
+
+    <%- include('footer') %>

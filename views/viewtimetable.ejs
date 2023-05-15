@@ -1,0 +1,124 @@
+<%- include('header') %>
+    <div class="view">
+        <% function getRandomArrayElement(arr) { %>
+            <% return arr[Math.floor(Math.random() * arr.length)]; %>
+                <% } %>
+
+
+                    <div class="finaltable">
+                        <table class="ttable">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Monday</th>
+                                    <th>Tuesday</th>
+                                    <th>Wednesday</th>
+                                    <th>Thursday</th>
+                                    <th>Friday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p> 10:00 </p> <br>
+                                        <p> 11:00 </p> <br>
+                                        <p> 12:00 </p> <br>
+                                        <p> 13:00 </p> <br>
+                                        <p> 15:00 </p> <br>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                    </td>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                        <p>
+                                            <%= getRandomArrayElement(courses) %>
+                                        </p> <br>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="print-btn" class="printBtn">Print</button>
+    </div>
+
+    <%- include('footer') %>
